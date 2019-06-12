@@ -54,6 +54,11 @@ orderly:
     repo: vimc
     name: orderly.server
     tag: master
+  env:
+    SLACK_URL: VAULT:slack/orderly-webhook:url
+    MONTAGU_USER: orderly
+    MONTAGU_HOST: db,
+    MONTAGU_PORT: 5432
 
 ## Api and Website configuration
 web:
