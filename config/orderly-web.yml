@@ -107,3 +107,4 @@ web:
   ## Optional custom logo image, any valid image format. Should be a
   ## file path relative to the config file.
   logo: logo-green.png
+  favicon: logo-small.png
