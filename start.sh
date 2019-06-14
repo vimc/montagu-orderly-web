@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 set -ex
 
-if [[ $# -ne 1 ]] ; then
-    echo 'Usage: ./start.sh INSTANCE_NAME'
-    echo 'where INSTANCE_NAME is one of [uat, science, prod]'
+instance=$(cat instance)
+
+if [[ "$instance" = "uat" ]] || [[ "$instance" = "science" ]] || [[ "$instance" = "prod" ]] ; then
+    orderly-web start ./config --extra $instance
+else
+    echo 'You must run ./setup.sh to configure the instance name'
     exit 0
 fi
-
-orderly-web start ./config --extra $1
