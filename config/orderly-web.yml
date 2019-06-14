@@ -51,8 +51,8 @@ orderly:
   ## you need.  The components repo, image and tag will be assembled as
   ## <repo>/<name>:<tag> for the full docker image reference.
   image:
-    repo: vimc
-    name: orderly.server
+    repo: docker.montagu.dide.ic.ac.uk:5000
+    name: montagu-orderly
     tag: master
   env:
     SLACK_URL: VAULT:secret/slack/orderly-webhook:url
