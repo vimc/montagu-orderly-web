@@ -1,6 +1,6 @@
 web:
   ## public url of the web service:
-  url: https://support.dide.ic.ac.uk:11443/reports
+  url: https://support.montagu.dide.ic.ac.uk:11443/reports
   auth:
     montagu_url: https://support.montagu.dide.ic.ac.uk:11443
     montagu_api_url: https://support.montagu.dide.ic.ac.uk:11443/api/v1/
