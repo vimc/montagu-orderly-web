@@ -55,9 +55,9 @@ orderly:
     name: orderly.server
     tag: master
   env:
-    SLACK_URL: VAULT:slack/orderly-webhook:url
+    SLACK_URL: VAULT:secret/slack/orderly-webhook:url
     MONTAGU_USER: orderly
-    MONTAGU_HOST: db,
+    MONTAGU_HOST: db
     MONTAGU_PORT: 5432
 
 ## Api and Website configuration
@@ -97,18 +97,6 @@ web:
   email: montagu-help@imperial.ac.uk
   ## Authentication configuration
   auth:
-    ## Name of the github organisation if using github auth
-    github_org: vimc
-    ## Name of the team within this github organisation if using
-    ## github auth
-    github_team: ""
-    ## If using github auth you will need to register a github oauth app
-    ## https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/
-    ## The "Authorization callback URL" must be set to the public facing url
-    ## that you configured above
-    github_oauth:
-      id: ""
-      secret: ""
     ## Enable or disable fine grained permissions
     fine_grained: true
     ## Enable montagu authentication provider
