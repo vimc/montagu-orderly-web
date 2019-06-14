@@ -2,7 +2,7 @@ web:
   ## public url of the web service:
   url: https://support.dide.ic.ac.uk:10443/reports
   auth:
-    montagu_url: https://support.dide.ic.ac.uk:10443
+    montagu_url: https://support.montagu.dide.ic.ac.uk:10443
     montagu_api_url: https://support.montagu.dide.ic.ac.uk:10443/api/v1/
 orderly:
   ## Environment variables that will be made available to orderly.
