@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -e
+
+orderly-web stop ./config
