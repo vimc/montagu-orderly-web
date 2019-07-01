@@ -108,3 +108,6 @@ web:
   ## file path relative to the config file.
   logo: logo-green.png
   favicon: logo-small.png
+
+slack:
+  webhook_url: VAULT:secret/slack/orderly-deploy-webhook:url
