@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [[ $# -ne 1 ]] ; then
-    echo 'Usage: ./setup.sh INSTANCE_NAME'
+    echo 'Usage: ./setup INSTANCE_NAME'
     exit 1
 fi
 
