@@ -11,6 +11,8 @@ orderly:
   ## Typically these will be in SHOUTY_SNAKE_CASE.  To pull values
   ## from the vault, use the format VAULT:<path>:<key>
   env:
+    MONTAGU_DB_DEFAULT_INSTANCE: uat
+    MONTAGU_DB_PASSWORD_UAT: readonly
     MONTAGU_PASSWORD: orderly
     ORDERLY_API_SERVER_IDENTITY: uat
     ANNEX_HOST: db_annex
