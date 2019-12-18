@@ -5,9 +5,9 @@ if [[ $# -ne 1 ]] ; then
     exit 1
 fi
 
-if [[ "$1" = "uat" ]] || [[ "$1" = "science" ]] || [[ "$1" = "production" ]] ; then
+if [[ "$1" = "uat" ]] || [[ "$1" = "science" ]] || [[ "$1" = "production" ]] || [[ "$1" = "latest" ]]; then
     echo $1 > instance
 else
-    echo 'INSTANCE_NAME must be one of [uat, science, production]'
+    echo 'INSTANCE_NAME must be one of [uat, science, production, latest]'
     exit 1
 fi

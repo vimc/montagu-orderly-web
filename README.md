@@ -9,7 +9,7 @@ is contained in a file `INSTANCE_NAME.yml`.
 
 ### Usage
 The first time you deploy to a new instance, run `./setup INSTANCE_NAME` - the only instance names
-currently supported are `uat`, `science` and `production`.
+currently supported are `uat`, `science`, `production` and `latest`
 
 Then and for all subsequent deploys run `./start`.
 
