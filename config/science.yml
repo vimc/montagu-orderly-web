@@ -11,6 +11,8 @@ orderly:
   ## Typically these will be in SHOUTY_SNAKE_CASE.  To pull values
   ## from the vault, use the format VAULT:<path>:<key>
   env:
+    MONTAGU_DB_DEFAULT_INSTANCE: science
+    MONTAGU_DB_PASSWORD_SCIENCE: VAULT:secret/database/science/users/orderly:password
     MONTAGU_PASSWORD: VAULT:secret/database/science/users/orderly:password
     ORDERLY_API_SERVER_IDENTITY: science
     ANNEX_HOST: annex.montagu.dide.ic.ac.uk
