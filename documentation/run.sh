@@ -1,3 +1,8 @@
 #!/usr/bin/env bash
+set -ex
 
-docker run -v documents:/documents copy-documentation $1
+REGISTRY=docker.montagu.dide.ic.ac.uk:5000
+NAME=orderlyweb-copy-documentation
+IMAGE=$REGISTRY/$NAME
+
+docker run -v documents:/documents $IMAGE $1
