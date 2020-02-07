@@ -1,0 +1,7 @@
+set -ex
+
+REGISTRY=vimc
+NAME=montagu-orderlyweb-copydocs
+IMAGE=$REGISTRY/$NAME
+
+docker run -v documents:/documents $IMAGE $1
