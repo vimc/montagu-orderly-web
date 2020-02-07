@@ -4,6 +4,7 @@
 Usage:
   copy_files.py <share_link_url>
 """
+import os
 import requests
 import zipfile
 import docopt
@@ -14,6 +15,9 @@ def download(url):
     r = requests.get(url)
     with open('tmp.zip', 'wb') as f:
         f.write(r.content)
+    for root, dirs, files in os.walk("/documents"):
+        for file in files:
+            os.remove(os.path.join(root, file))
     with zipfile.ZipFile("tmp.zip", 'r') as zip_ref:
         zip_ref.extractall("/documents")
 

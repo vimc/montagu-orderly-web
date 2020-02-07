@@ -2,6 +2,7 @@ set -ex
 
 REGISTRY=vimc
 NAME=montagu-orderlyweb-copydocs
-IMAGE=$REGISTRY/$NAME
+GIT_ID=$(git rev-parse --short=7 HEAD)
+IMAGE=$REGISTRY/$NAME:$GIT_ID
 
-docker run -v documents:/documents $IMAGE $1
+docker run -v montagu_documents:/documents $IMAGE $1
