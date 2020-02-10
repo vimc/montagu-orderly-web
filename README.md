@@ -36,3 +36,11 @@ vault write secret/reports/deploy public=@ssh/id_rsa.pub private=@ssh/id_rsa
 ```
 
 4. Remove the ssh keys with `rm -r ssh`
+
+### Populating static documentation volume
+The `documentation` folder contains scripts needed for populating the static documentation folder from a dropbox 
+folder. 
+Usage:
+1. `./build.sh` - Builds a docker image and pushes it to the vimc private docker registry. Runs on TeamCity.
+2. `./run <share_link>` - Takes a dropbox share link and populates a volume named `documents` with the contents of the 
+ provided dropbox folder (by running the image created by 1.)
