@@ -8,6 +8,7 @@ import os
 import requests
 import zipfile
 import docopt
+import shutil
 
 
 def download(url):
@@ -18,6 +19,8 @@ def download(url):
     for root, dirs, files in os.walk("/documents"):
         for file in files:
             os.remove(os.path.join(root, file))
+        for d in dirs:
+            shutil.rmtree(d)
     with zipfile.ZipFile("tmp.zip", 'r') as zip_ref:
         zip_ref.extractall("/documents")
 

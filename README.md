@@ -42,5 +42,5 @@ The `documentation` folder contains scripts needed for populating the static doc
 folder. 
 Usage:
 1. `./build.sh` - Builds a docker image and pushes it to the vimc private docker registry. Runs on TeamCity.
-2. `./run.sh <share_link>` - Takes a dropbox share link and populates a volume named `documents` with the contents of the 
+2. `./run <share_link>` - Takes a dropbox share link and populates a volume named `documents` with the contents of the 
  provided dropbox folder (by running the image created by 1.)
