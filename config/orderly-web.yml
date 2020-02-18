@@ -43,6 +43,7 @@ volumes:
   orderly: montagu_orderly_volume
   proxy_logs: orderly_web_proxy_logs
   css: orderly_web_css
+  documents: montagu_documents
 
 ## Orderly configuration
 orderly:
