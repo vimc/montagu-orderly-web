@@ -10,8 +10,7 @@ orderly:
   ## from the vault, use the format VAULT:<path>:<key>
   env:
     MONTAGU_DB_DEFAULT_INSTANCE: production
-    MONTAGU_DB_PASSWORD_PRODUCTION: VAULT:secret/database/production/users/orderly:password
-    MONTAGU_PASSWORD: VAULT:secret/database/production/users/orderly:password
+    MONTAGU_DB_PASSWORD_PRODUCTION: VAULT:secret/database/production/users/readonly:password
     ORDERLY_API_SERVER_IDENTITY: production
     ANNEX_HOST: annex.montagu.dide.ic.ac.uk
     ANNEX_PORT: 15432

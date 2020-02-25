@@ -13,7 +13,6 @@ orderly:
   env:
     MONTAGU_DB_DEFAULT_INSTANCE: uat
     MONTAGU_DB_PASSWORD_UAT: readonly
-    MONTAGU_PASSWORD: orderly
     ORDERLY_API_SERVER_IDENTITY: uat
     ANNEX_HOST: db_annex
     ANNEX_PORT: 5432

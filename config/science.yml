@@ -12,10 +12,8 @@ orderly:
   ## from the vault, use the format VAULT:<path>:<key>
   env:
     MONTAGU_DB_DEFAULT_INSTANCE: science
-    MONTAGU_DB_PASSWORD_SCIENCE: VAULT:secret/database/science/users/orderly:password
-    MONTAGU_PASSWORD: VAULT:secret/database/science/users/orderly:password
+    MONTAGU_DB_PASSWORD_SCIENCE: VAULT:secret/database/science/users/readonly:password
     ORDERLY_API_SERVER_IDENTITY: science
     ANNEX_HOST: annex.montagu.dide.ic.ac.uk
     ANNEX_PORT: 15432
     ANNEX_PASSWORD: VAULT:secret/annex/users/readonly:password
-
