@@ -57,9 +57,6 @@ orderly:
     tag: master
   env:
     SLACK_URL: VAULT:secret/slack/orderly-webhook:url
-    MONTAGU_USER: orderly
-    MONTAGU_HOST: db
-    MONTAGU_PORT: 5432
   ssh:
     public: VAULT:secret/reports/deploy:public
     private: VAULT:secret/reports/deploy:private
