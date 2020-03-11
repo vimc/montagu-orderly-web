@@ -20,7 +20,7 @@ def download(url):
         for file in files:
             os.remove(os.path.join(root, file))
         for d in dirs:
-            shutil.rmtree(d)
+            shutil.rmtree(os.path.join(root, d))
     with zipfile.ZipFile("tmp.zip", 'r') as zip_ref:
         zip_ref.extractall("/documents")
 
