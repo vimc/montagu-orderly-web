@@ -57,6 +57,7 @@ orderly:
     tag: master
   env:
     SLACK_URL: VAULT:secret/slack/orderly-webhook:url
+    TEAMS_URL: VAULT:secret/teams/orderly-webhook:url
     # These are set to nonsense values until VIMC-3547 is fixed as they
     # are required for the slack hook to work
     MONTAGU_PORTAL_USERNAME: unused
