@@ -17,3 +17,5 @@ orderly:
     ANNEX_HOST: annex.montagu.dide.ic.ac.uk
     ANNEX_PORT: 15432
     ANNEX_PASSWORD: VAULT:secret/annex/users/readonly:password
+    MONTAGU_DB_PASSWORD_PRODUCTION: VAULT:secret/database/production/users/readonly:password
+
