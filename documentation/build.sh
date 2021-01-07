@@ -5,7 +5,7 @@ GIT_ID=$(git rev-parse --short=7 HEAD)
 GIT_BRANCH=$(git symbolic-ref --short HEAD)
 
 HERE=$(dirname $0)
-REGISTRY=docker.montagu.dide.ic.ac.uk:5000
+REGISTRY=vimc
 REGISTRY_PUBLIC=vimc
 NAME=montagu-orderlyweb-copydocs
 
