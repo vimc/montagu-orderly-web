@@ -1,6 +1,6 @@
 web:
   image:
-    repo: docker.montagu.dide.ic.ac.uk:5000 # use our local registry for testing
+    repo: vimc
   ## public url of the web service:
   url: https://support.montagu.dide.ic.ac.uk:11443/reports
   auth:
