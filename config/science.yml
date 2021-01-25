@@ -1,4 +1,4 @@
-web:
+:
   image:
     repo: vimc
   ## public url of the web service:
@@ -18,4 +18,4 @@ orderly:
     ANNEX_PORT: 15432
     ANNEX_PASSWORD: VAULT:secret/annex/users/readonly:password
     MONTAGU_DB_PASSWORD_PRODUCTION: VAULT:secret/database/production/users/readonly:password
-
+    VERSE_DEPLOY_KEY: VAULT:secret/verse/deploy:private
