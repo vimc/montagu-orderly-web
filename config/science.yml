@@ -1,4 +1,4 @@
-:
+web:
   image:
     repo: vimc
   ## public url of the web service:
