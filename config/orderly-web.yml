@@ -44,6 +44,14 @@ volumes:
   proxy_logs: orderly_web_proxy_logs
   css: orderly_web_css
   documents: montagu_documents
+  redis: orderly_web_redis_data
+
+## Redis configuration
+redis:
+  image:
+    name: redis
+    tag: "5.0"
+  volume: orderly_web_redis_data
 
 ## Orderly configuration
 orderly:
@@ -54,7 +62,8 @@ orderly:
   image:
     repo: vimc
     name: montagu-orderly
-    tag: master
+    tag: vimc-4192
+    worker_name: orderly.server-worker
   env:
     SLACK_URL: VAULT:secret/slack/orderly-webhook:url
     TEAMS_URL: VAULT:secret/teams/orderly-webhook:url
@@ -65,6 +74,7 @@ orderly:
   ssh:
     public: VAULT:secret/reports/deploy:public
     private: VAULT:secret/reports/deploy:private
+  workers: 1
 
 ## Api and Website configuration
 web:
@@ -80,7 +90,7 @@ web:
   image:
     repo: vimc
     name: orderly-web
-    tag: release
+    tag: mrc-2165
     migrate: orderlyweb-migrate
     admin: orderly-web-user-cli
     css-generator: orderly-web-css-generator
