@@ -61,9 +61,9 @@ orderly:
   ## <repo>/<name>:<tag> for the full docker image reference.
   image:
     repo: vimc
-    name: orderly.server 
-    tag: vimc-4192
-    worker_name: orderly.server-worker
+    name: montagu-orderly
+    tag: vimc-4582
+    worker_name: montagu-orderly-worker
   env:
     SLACK_URL: VAULT:secret/slack/orderly-webhook:url
     TEAMS_URL: VAULT:secret/teams/orderly-webhook:url
