@@ -61,7 +61,7 @@ orderly:
   ## <repo>/<name>:<tag> for the full docker image reference.
   image:
     repo: vimc
-    name: montagu-orderly
+    name: orderly.server 
     tag: vimc-4192
     worker_name: orderly.server-worker
   env:
