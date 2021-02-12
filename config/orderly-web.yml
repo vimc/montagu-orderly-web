@@ -90,7 +90,7 @@ web:
   image:
     repo: vimc
     name: orderly-web
-    tag: release 
+    tag: release
     migrate: orderlyweb-migrate
     admin: orderly-web-user-cli
     css-generator: orderly-web-css-generator
