@@ -62,7 +62,7 @@ orderly:
   image:
     repo: vimc
     name: montagu-orderly
-    tag: vimc-4582
+    tag: master 
     worker_name: montagu-orderly
   env:
     SLACK_URL: VAULT:secret/slack/orderly-webhook:url
@@ -90,7 +90,7 @@ web:
   image:
     repo: vimc
     name: orderly-web
-    tag: mrc-2165
+    tag: master
     migrate: orderlyweb-migrate
     admin: orderly-web-user-cli
     css-generator: orderly-web-css-generator
