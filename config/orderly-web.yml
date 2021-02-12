@@ -63,7 +63,7 @@ orderly:
     repo: vimc
     name: montagu-orderly
     tag: vimc-4582
-    worker_name: montagu-orderly-worker
+    worker_name: montagu-orderly
   env:
     SLACK_URL: VAULT:secret/slack/orderly-webhook:url
     TEAMS_URL: VAULT:secret/teams/orderly-webhook:url
