@@ -32,7 +32,7 @@ ssh-keygen -f ssh/id_rsa -q -N ""
 3. Add the keys to vault with
 
 ```
-vault write secret/reports/deploy public=@ssh/id_rsa.pub private=@ssh/id_rsa
+vault write secret/vimc/reports/deploy public=@ssh/id_rsa.pub private=@ssh/id_rsa
 ```
 
 4. Remove the ssh keys with `rm -r ssh`

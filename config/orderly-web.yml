@@ -1,7 +1,7 @@
 vault:
   ## Address of the vault server.  This should be a string if it is
   ## present.
-  addr: https://support.montagu.dide.ic.ac.uk:8200
+  addr: https://vault.dide.ic.ac.uk:8200
   auth:
     ## Authentication type - must be either "token" or the name of a
     ## supported authentication method.  These seem to be poorly
@@ -65,15 +65,15 @@ orderly:
     tag: master 
     worker_name: montagu-orderly
   env:
-    SLACK_URL: VAULT:secret/slack/orderly-webhook:url
-    TEAMS_URL: VAULT:secret/teams/orderly-webhook:url
+    SLACK_URL: VAULT:secret/vimc/slack/orderly-webhook:url
+    TEAMS_URL: VAULT:secret/vimc/teams/orderly-webhook:url
     # These are set to nonsense values until VIMC-3547 is fixed as they
     # are required for the slack hook to work
     MONTAGU_PORTAL_USERNAME: unused
     MONTAGU_PORTAL_PASSWORD: unused
   ssh:
-    public: VAULT:secret/reports/deploy:public
-    private: VAULT:secret/reports/deploy:private
+    public: VAULT:secret/vimc/reports/deploy:public
+    private: VAULT:secret/vimc/reports/deploy:private
   workers: 1
 
 ## Api and Website configuration
@@ -126,4 +126,4 @@ web:
   favicon: logo-small.png
 
 slack:
-  webhook_url: VAULT:secret/slack/orderly-deploy-webhook:url
+  webhook_url: VAULT:secret/vimc/slack/orderly-deploy-webhook:url
