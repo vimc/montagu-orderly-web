@@ -3,7 +3,7 @@ set -e
 
 instance=$(cat instance)
 
-if [[ "$instance" = "uat" ]] || [[ "$instance" = "science" ]] || [[ "$instance" = "production" ]] || [[ "$instance" = "latest" ]] ; then
+if [[ "$instance" = "uat" ]] || [[ "$instance" = "science" ]] || [[ "$instance" = "production" ]] || [[ "$instance" = "uat2" ]] || [[ "$instance" = "science2" ]] || [[ "$instance" = "production2" ]] || [[ "$instance" = "latest" ]] ; then
     orderly-web start ./config --extra $instance --pull "$@"
 else
     echo 'You must run ./setup to configure the instance name'
