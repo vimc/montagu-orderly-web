@@ -45,6 +45,17 @@ volumes:
   css: orderly_web_css
   documents: montagu_documents
   redis: orderly_web_redis_data
+  outpack: orderly_web_outpack
+
+outpack:
+  migrate:
+    repo: mrcide
+    name: outpack.orderly
+    tag: main
+  server:
+    repo: mrcide
+    name: outpack_server
+    tag: main
 
 ## Redis configuration
 redis:
