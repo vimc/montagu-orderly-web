@@ -2,10 +2,10 @@ web:
   image:
     repo: vimc
   ## public url of the web service:
-  url: https://support.montagu.dide.ic.ac.uk:11443/reports
+  url: https://science.montagu.dide.ic.ac.uk/reports
   auth:
-    montagu_url: https://support.montagu.dide.ic.ac.uk:11443
-    montagu_api_url: https://support.montagu.dide.ic.ac.uk:11443/api/v1/
+    montagu_url: https://science.montagu.dide.ic.ac.uk
+    montagu_api_url: https://science.montagu.dide.ic.ac.uk/api/v1/
 orderly:
   ## Environment variables that will be made available to orderly.
   ## Typically these will be in SHOUTY_SNAKE_CASE.  To pull values
