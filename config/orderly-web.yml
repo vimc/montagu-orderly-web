@@ -56,6 +56,18 @@ outpack:
     name: outpack_server
     tag: main
 
+packit:
+  repo: mrcide
+  api:
+    name: packit-api
+    tag: main
+  app:
+    name: packit
+    tag: main
+  db:
+    name: packit-db
+    tag: main
+
 ## Redis configuration
 redis:
   image:
